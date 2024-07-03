@@ -1,0 +1,22 @@
+.container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.text-holder { grid-area: 1 / 1 / 2 / 5; }
+.card-holder { grid-area: 1 / 5 / 2 / 6; }
+
+.example-card {
+    max-width: 400px;
+    float: right;
+}
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+  
