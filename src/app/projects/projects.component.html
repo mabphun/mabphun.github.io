@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<mat-list>
+    <div mat-subheader>Projects</div>
+    @for (project of projectService.projects; track project) {
+      <mat-list-item>
+        <mat-icon matListItemIcon>{{project.icon !== '' ? project.icon : 'grade'}}</mat-icon>
+        <div matListItemTitle>{{project.title}}</div>
+        <div matListItemLine>{{project.description}}</div>
+        <div class="status" 
+            [ngStyle]="{'background-color': project.status.color, 'color': project.status.fontColor}" 
+            matListItemLine>
+            {{project.status.name}}
+        </div>
+      </mat-list-item>
+      @if(projectService.projects.indexOf(project) + 1 < projectService.projects.length){
+        <mat-divider></mat-divider>
+      }
+    }
+</mat-list>
