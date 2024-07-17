@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatButton, MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
+import { LanguageService } from '../_services/language.service';
+import { Texts } from '../_models/text.model';
 
 @Component({
   selector: 'app-navigation',
@@ -12,5 +14,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navigation.component.scss'
 })
 export class NavigationComponent {
+  languageService = inject(LanguageService)
+  texts = Texts
 
+  switchLanguage(){
+    this.languageService.setLanguage()
+  }
 }

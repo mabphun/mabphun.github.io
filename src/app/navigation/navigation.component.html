@@ -1,5 +1,6 @@
-<mat-toolbar>
-    <span><a mat-button routerLink="/home">Home</a></span>
-    <span><a mat-button routerLink="/projects">Projects</a></span>
-    <span><a mat-button routerLink="/gallery">Gallery</a></span>
+<mat-toolbar class="toolbar">
+    <span><a mat-button routerLink="/home">{{languageService.getText(texts.navigation.home)}}</a></span>
+    <span><a mat-button routerLink="/projects">{{languageService.getText(texts.navigation.projects)}}</a></span>
+    <span><a mat-button routerLink="/gallery">{{languageService.getText(texts.navigation.gallery)}}</a></span>
+    <span><a mat-button (click)="switchLanguage()">Switch Language ({{languageService.getLanguage()}})</a></span>
 </mat-toolbar>

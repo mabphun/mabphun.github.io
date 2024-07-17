@@ -16,8 +16,12 @@
 }
   
 .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+    // background-image: url('../_resources/myself-icon.JPG');
+    // background-size: contain;
+    // background-position-x: center;
+    //background-image: url('https://scontent.fbud4-1.fna.fbcdn.net/v/t39.30808-6/289442524_3165732033676056_1730112383963844621_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=m1Nx7m2AreMQ7kNvgH6FSRU&_nc_ht=scontent.fbud4-1.fna&cb_e2o_trans=q&oh=00_AYCDtRBB49BiCSqxKgLpHi8eXWYz-kXJG8IIR96y7Kdiyw&oe=669D6CA2');
+    //background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    //background-size: cover;
 }
 
 .subtitle{
