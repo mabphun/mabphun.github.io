@@ -20,27 +20,27 @@ export const Texts = {
             editor: {
                 Name: 'Ulyssys Kft. Xml- és sablonszerkesztő|Ulyssys Kft. Xml and template editor (WIP)',
                 Properties: [
-                    'Információcsere a szervezőkkel|wip',
-                    'Specifikáció olvasás és megértés|wip',
-                    'Levelek létrehozása változómezőkkel|wip',
-                    'Felmerült hibák javítása|wip',
-                    'Issuekezelés|wip'
+                    'Információcsere a szervezőkkel|Information exchange with the organisers',
+                    'Specifikáció olvasás és megértés|Specification reading and understanding',
+                    'Levelek létrehozása változómezőkkel|Creating letter templates',
+                    'Felmerült hibák javítása|Fixing bugs and errors',
+                    'Issuekezelés|Issue management'
                 ]
             },
             tester: {
                 Name: 'Ulyssys Kft. Manuális tesztelő|Ulyssys Kft. Manual tester',
                 Properties: [
-                    'Egyszerűbb tesztelési feladatok|wip',
-                    'Specifikáció olvasás és megértés|wip',
-                    'Issuekezelés|wip'
+                    'Egyszerűbb tesztelési feladatok|Simple testing tasks',
+                    'Specifikáció olvasás és megértés|Specification reading and understanding',
+                    'Issuekezelés|Issue management'
                 ]
             }
         },
         euroone: {
             Name: 'Euro One Számítástechnikai Zrt. Helpdesk munkatárs|Euro One Számítástechnikai Ltd Helpdesk member',
             Properties: [
-                'Hibajegyek kezelése|wip',
-                'Telefonos és emailes kapcsolattartás|wip'
+                'Hibajegyek kezelése|Handling error tickets',
+                'Telefonos és emailes kapcsolattartás|Assistance by phone and email'
             ]
         }
     },
@@ -64,7 +64,7 @@ export const Texts = {
         }
     },
     projects: {
-        introduction: 'Az oldalon található projektek olyan publikus fejlesztések, melyeket az egyetemi feladatként; saját kedvből vagy megrendelésre készítettem el.|wip'
+        introduction: 'Az oldalon található projektek olyan publikus fejlesztések, melyeket az egyetemi feladatként; saját kedvből vagy megrendelésre készítettem el.|The projects on this site are public developments that I have made as part of a university assignment, on my own initiative or on commission.'
     }
 
 }

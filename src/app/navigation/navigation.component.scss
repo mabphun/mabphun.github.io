@@ -6,3 +6,23 @@
   background-color: white;
   box-shadow: 0px 3px 5px rgb(222, 221, 221);
 }
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+img{
+  width: 30px;
+  height: 22.5px;
+  cursor: pointer;
+}
+.hu{
+  background-image: url('../_resources/hu.jpg');
+  background-size: contain;
+}
+
+.en{
+  background-image: url('../_resources/gb.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

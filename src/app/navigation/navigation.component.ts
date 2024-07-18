@@ -17,7 +17,18 @@ export class NavigationComponent {
   languageService = inject(LanguageService)
   texts = Texts
 
+  imgClass = 'hu'
+
+  // language = 'hu'
+  // imageUrl = '../_resources/'+ this.language + '.jpg'
+
+  constructor(){
+    this.imgClass = this.languageService.getLanguage()
+  }
+
   switchLanguage(){
     this.languageService.setLanguage()
+    // this.language = this.languageService.getLanguage()
+    this.imgClass = this.languageService.getLanguage()
   }
 }
