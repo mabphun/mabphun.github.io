@@ -5,5 +5,7 @@ export class ProjectModel{
     title: string = ''
     description: string = ''
     icon: string = ''
-    status: ProjectStatus = new ProjectStatus
+    status: ProjectStatus = new ProjectStatus('', '', '')
+    url: string = ''
+    category: string = ''
 }

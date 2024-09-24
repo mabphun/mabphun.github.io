@@ -7,45 +7,61 @@ import { ProjectStatus } from "../_models/status.model";
 })
 export class ProjectService{
 
-    private _todoStatus: ProjectStatus = { 
-        name: 'To Do', 
-        color: '#70c961', 
-        fontColor: '#ffffff'
+    private statuses = {
+        todo: new ProjectStatus('To Do', '#70c961', '#ffffff'),
+        wip: new ProjectStatus('WIP', '#4287f5', '#ffffff'),
+        done: new ProjectStatus('Done', '#ac62d1', '#ffffff')
     }
 
-    private _wipStatus: ProjectStatus = { 
-        name: 'WIP', 
-        color: '#4287f5', 
-        fontColor: '#ffffff'
+    private categories = {
+        
     }
 
-    private _doneStatus: ProjectStatus = { 
-        name: 'Done', 
-        color: '#ac62d1', 
-        fontColor: '#ffffff'
-    }
+    // private _todoStatus: ProjectStatus = { 
+    //     name: 'To Do', 
+    //     color: '#70c961', 
+    //     fontColor: '#ffffff'
+    // }
+
+    // private _wipStatus: ProjectStatus = { 
+    //     name: 'WIP', 
+    //     color: '#4287f5', 
+    //     fontColor: '#ffffff'
+    // }
+
+    // private _doneStatus: ProjectStatus = { 
+    //     name: 'Done', 
+    //     color: '#ac62d1', 
+    //     fontColor: '#ffffff'
+    // }
 
     public projects: ProjectModel[] = [
         { 
             id: 1, 
-            title: 'Thesis', 
-            description: 'This is a longer description of my thesis', 
-            icon: 'language',
-            status: this._doneStatus
+            title: 'Szakdolgozat|Thesis', 
+            description: 'YouDo: Teendő és időmenedzsment alkalmazás Angular-ban|YouDo: To do and time management application in Angular', 
+            icon: 'playlist_add_check',
+            status: this.statuses.done,
+            url: 'https://github.com/mabphun/ProjectReference-YouDo',
+            category: ''
         },
         { 
             id: 2, 
-            title: 'Project 2', 
-            description: 'This is a longer description of project 2', 
-            icon: 'desktop_windows',
-            status: this._wipStatus,
+            title: 'OETube|OETube', 
+            description: 'Videómegosztó alkalmazás, felhasználók és csoportok számára|Video sharing application for users and groups', 
+            icon: 'play_circle_outline',
+            status: this.statuses.done,
+            url: 'https://github.com/mabphun/ProjectReference-OETube',
+            category: ''
         },
         { 
-            id: 3, 
-            title: 'Project 3', 
-            description: 'This is a longer description of project 3', 
-            icon: 'desktop_windows',
-            status: this._todoStatus,
+            id: 3,
+            title: 'Szótanuló alkalmazás|Learning App', 
+            description: 'Szavak, kifejezések, ábrák megtanulása kártyákkal és tesztekkel|Learning words, phrases, diagrams with cards and tests', 
+            icon: 'school',
+            status: this.statuses.done,
+            url: 'https://github.com/mabphun/ProjectReference-LearningApp',
+            category: ''
         },
     ]
 }

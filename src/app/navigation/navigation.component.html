@@ -1,7 +1,8 @@
 <mat-toolbar class="toolbar">
     <span><a mat-button routerLink="/home">{{languageService.getText(texts.navigation.home)}}</a></span>
     <span><a mat-button routerLink="/projects">{{languageService.getText(texts.navigation.projects)}}</a></span>
-    <span><a mat-button routerLink="/gallery">{{languageService.getText(texts.navigation.gallery)}}</a></span>
+    <!-- <span><a mat-button routerLink="/gallery">{{languageService.getText(texts.navigation.gallery)}}</a></span>
+    <span><a mat-button routerLink="/downloads">[Downloads]</a></span> -->
     <span class="example-spacer"></span>
     <span><img [ngClass]="imgClass" (click)="switchLanguage()"></span>
     <!-- <span><a mat-button class="example-icon" (click)="switchLanguage()">Switch Language </a></span> -->

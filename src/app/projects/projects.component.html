@@ -1,10 +1,10 @@
 <mat-list>
     <div mat-subheader>Projects</div>
     @for (project of projectService.projects; track project) {
-      <mat-list-item>
+      <mat-list-item class="item">
         <mat-icon matListItemIcon>{{project.icon !== '' ? project.icon : 'grade'}}</mat-icon>
-        <div matListItemTitle>{{project.title}}</div>
-        <div matListItemLine>{{project.description}}</div>
+        <div matListItemTitle><a [href]="project.url" target="_blank">{{languageService.getText(project.title)}}</a></div>
+        <div matListItemLine>{{languageService.getText(project.description)}}</div>
         <div class="status" 
             [ngStyle]="{'background-color': project.status.color, 'color': project.status.fontColor}" 
             matListItemLine>

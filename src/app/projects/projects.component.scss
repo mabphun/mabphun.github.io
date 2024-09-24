@@ -9,3 +9,11 @@ mat-divider{
     text-align: center;
     border-radius: 15px;
 }
+
+.item a{
+    text-decoration: none;
+}
+
+.item:hover a{
+    text-decoration: underline;
+}
