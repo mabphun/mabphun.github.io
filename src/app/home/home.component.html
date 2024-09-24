@@ -3,8 +3,7 @@
 
     <div class="text-holder">
         <h3 class="subtitle">{{ languageService.getText(texts.titles.AboutMe) }}</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, vero adipisci sunt blanditiis dolores, necessitatibus magnam illo qui facere corporis maxime eius quo, repudiandae tempora provident. Pariatur quo culpa ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur perferendis nemo sed libero fuga debitis tempora delectus necessitatibus rem exercitationem. Deserunt qui, esse sapiente inventore voluptatem reprehenderit! Quibusdam, animi quidem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime incidunt unde voluptatum. Qui explicabo soluta hic dolor illum rem, libero quos quae aspernatur quidem adipisci, tempore, officiis neque in? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore possimus illum deserunt natus asperiores repudiandae eveniet, labore sunt unde officia officiis. Nobis architecto sit cum, consequatur exercitationem mollitia tempora voluptatibus?</p>
+        <p class="just">{{languageService.getText(texts.aboutme.introduction)}}</p>
 
         <h3 class="subtitle">{{ languageService.getText(texts.titles.WorkExperience) }}</h3>
         <mat-accordion class="accordion-align" multi>
@@ -119,7 +118,7 @@
 
         <h3 class="subtitle">{{ languageService.getText(texts.titles.Hobbies) }}</h3>
         <div>
-            <p>
+            <p class="just">
                 Szabadidőmben szívesen játszok különböző stratégiai, ügyességi, és csapat videó- vagy társasjátékokat a barátaimmal. 
                 Szeretek sportolni, kedvenceim a röplabda és a pingpong. Tagja voltam a középiskolai amatőr röplabda csapatnak.
             </p>
@@ -129,22 +128,20 @@
     <div class="card-holder">
         <mat-card class="example-card" appearance="outlined">
             <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
             <mat-card-title>Molnár Ákos Benedek</mat-card-title>
             <mat-card-subtitle>DEVELOPER</mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-            <p>
-              {{languageService.getText(texts.projects.introduction)}}
-              <!-- The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-              bred for hunting. -->
+            <img mat-card-image src="assets/myself.jpg" alt="Photo of Myself">
+            <!-- <mat-card-content>
+            <p class="sub-img">
+              Munkáim:
+              {{languageService.getText(texts.aboutme.projectIntro)}}
             </p>
-            </mat-card-content>
-            <mat-card-actions>
-            <button mat-flat-button routerLink="/projects">{{languageService.getText(texts.navigation.projects).toUpperCase()}}</button>
-            </mat-card-actions>
+            </mat-card-content> -->
+            <!-- <mat-card-actions>
+            <button mat-flat-button routerLink="/projects">{{languageService.getText(texts.navigation.myprojects).toUpperCase()}}</button>
+            </mat-card-actions> -->
         </mat-card>
     </div>
     

@@ -6,6 +6,7 @@ export const Texts = {
     navigation: {
         home: 'Főoldal|Home',
         projects: 'Projektek|Projects',
+        myprojects: 'Munkáim|My Projects',
         gallery: 'Galéria|Gallery',
     },
     titles:{
@@ -63,8 +64,9 @@ export const Texts = {
             ]
         }
     },
-    projects: {
-        introduction: 'Az oldalon található projektek olyan publikus fejlesztések, melyeket az egyetemi feladatként; saját kedvből vagy megrendelésre készítettem el.|The projects on this site are public developments that I have made as part of a university assignment, on my own initiative or on commission.'
+    aboutme: {
+        introduction: 'Molnár Ákos vagyok, diplomámat 2024-ben szereztem az Óbudai Egyetemen, üzemmérnök-informatikus szakon, szoftvertervezés és -fejlesztés specializáción. Egyetem mellett majd három évig dolgoztam ügyfélszolgálati, tesztelői és sablonszerkesztői pozícióban, melyek új munkakörnyezetet és csapatba való beilleszkedést jelentettek. Munkám során lehetőségem volt belelátni a vállalatok kisebb-nagyobb projektjeibe és munkafolyamataiba. Magamat szorgos, megoldást kereső és a mérnöki szemléletmódot alkalmazó embernek tartom.',
+        projectIntro: 'Az oldalon található projektek olyan fejlesztések, melyeket egyetemi feladatként; magamnak vagy megrendelésre készítettem el.|The projects on this site are public developments that I have made as part of a university assignment, on my own initiative or on commission.'
     }
 
 }
