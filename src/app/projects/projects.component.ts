@@ -7,6 +7,7 @@ import { MatListModule } from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../_services/language.service';
+import { Texts } from '../_models/text.model';
 
 @Component({
   selector: 'app-projects',
@@ -24,6 +25,7 @@ import { LanguageService } from '../_services/language.service';
 export class ProjectsComponent {
   projectService = inject(ProjectService)
   languageService = inject(LanguageService)
+  public texts = Texts
 
   constructor(){
     

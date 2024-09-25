@@ -109,19 +109,12 @@
 
         <h3 class="subtitle">{{ languageService.getText(texts.titles.TechKnowledge) }}</h3>
         <ul>
-            <li>Angol Középfokú (B2) komplex nyelvvizsga (Corvinus, 2020)</li>
-            <li>Programnyelvek: C#, Javascript, Typescript, SQL, Python, Java</li>
-            <li>Egyéb nyelvek: HTML, CSS</li>
-            <li>ECDL vizsga (2019)</li>
-            <li>Kép- és videószerkesztés felhasználói szinten</li>
+            <li *ngFor="let item of texts.aboutme.techKnowledge">{{languageService.getText(item)}}</li>
         </ul>
 
         <h3 class="subtitle">{{ languageService.getText(texts.titles.Hobbies) }}</h3>
         <div>
-            <p class="just">
-                Szabadidőmben szívesen játszok különböző stratégiai, ügyességi, és csapat videó- vagy társasjátékokat a barátaimmal. 
-                Szeretek sportolni, kedvenceim a röplabda és a pingpong. Tagja voltam a középiskolai amatőr röplabda csapatnak.
-            </p>
+            <p class="just">{{languageService.getText(texts.aboutme.hobbies)}}</p>
         </div>
     </div>
 
@@ -129,8 +122,8 @@
         <mat-card class="example-card" appearance="outlined">
             <mat-card-header>
             <!-- <div mat-card-avatar class="example-header-image"></div> -->
-            <mat-card-title>Molnár Ákos Benedek</mat-card-title>
-            <mat-card-subtitle>DEVELOPER</mat-card-subtitle>
+            <mat-card-title>{{languageService.getText(texts.aboutme.name)}}</mat-card-title>
+            <mat-card-subtitle>{{languageService.getText(texts.aboutme.jobPosition).toUpperCase()}}</mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image src="assets/myself.jpg" alt="Photo of Myself">
             <!-- <mat-card-content>

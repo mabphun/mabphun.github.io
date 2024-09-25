@@ -1,5 +1,8 @@
 <mat-list>
-    <div mat-subheader>Projects</div>
+    <div mat-subheader>
+      <span class="subtitle">Projects</span>
+      <span class="update">{{languageService.getText(texts.lastUpdate)}}</span>
+    </div>
     @for (project of projectService.projects; track project) {
       <mat-list-item class="item">
         <mat-icon matListItemIcon>{{project.icon !== '' ? project.icon : 'grade'}}</mat-icon>
