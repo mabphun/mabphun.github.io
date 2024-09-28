@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -14,5 +15,11 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'mabphun.github.io';
+  title = 'MABPHUN';
+
+  constructor(
+    private titleService: Title
+  ){
+    titleService.setTitle(this.title)
+  }
 }

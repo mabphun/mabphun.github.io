@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../_services/language.service';
 import { Texts } from '../_models/text.model';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-projects',
