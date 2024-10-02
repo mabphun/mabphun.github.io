@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../_services/language.service';
 import { Texts } from '../_models/text.model';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -25,4 +26,13 @@ import { Texts } from '../_models/text.model';
 export class HomeComponent {
   public languageService = inject(LanguageService)
   public texts = Texts
+
+  constructor(
+    private meta: Meta
+  ){
+    meta.addTags([
+      { name: 'description', content: 'Itt található az önéletrajzom' },
+      { name: 'keywords', content: 'mabphun, bemutatkozás, önéletrajz' }
+    ])
+  }
 }

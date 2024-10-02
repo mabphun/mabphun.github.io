@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +18,13 @@ export class AppComponent {
   title = 'MABPHUN';
 
   constructor(
-    private titleService: Title
+    private titleService: Title,
+    private meta: Meta
   ){
     titleService.setTitle(this.title)
+    meta.addTags([
+      { name: 'description', content: 'Molnár Ákos Benedek vagyok, szoftverfejlesztő.' },
+      { name: 'keywords', content: 'mabphun, projektek, önéletrajz' }
+    ])
   }
 }
