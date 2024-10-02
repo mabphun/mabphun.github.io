@@ -126,12 +126,18 @@
             <mat-card-subtitle>{{languageService.getText(texts.aboutme.jobPosition).toUpperCase()}}</mat-card-subtitle>
             </mat-card-header>
             <img mat-card-image src="assets/myself.jpg" alt="Photo of Myself">
-            <!-- <mat-card-content>
-            <p class="sub-img">
+            <mat-card-content>
+              <h3 class="subtitle nospacing">{{languageService.getText(texts.aboutme.contacts)}}</h3>
+              <p>
+                Email: <a class="contact" href="mailto:mabphun@gmail.com">mabphun&#64;gmail.com</a>
+                <br>
+                Tel: <a class="contact" href="tel:+36305858830"><span class="phonespacing">+36</span><span class="phonespacing">30</span><span class="phonespacing">585</span><span class="phonespacing">8830</span></a>
+              </p>
+            <!-- <p class="sub-img">
               Munkáim:
               {{languageService.getText(texts.aboutme.projectIntro)}}
-            </p>
-            </mat-card-content> -->
+            </p> -->
+            </mat-card-content>
             <!-- <mat-card-actions>
             <button mat-flat-button routerLink="/projects">{{languageService.getText(texts.navigation.myprojects).toUpperCase()}}</button>
             </mat-card-actions> -->

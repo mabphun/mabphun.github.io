@@ -43,3 +43,23 @@ img{
     color: rgb(100, 100, 100);
     padding-top: 5px;
 }
+
+.nospacing{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.contact{
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+}
+
+.contact:hover{
+    color: rgb(60, 60, 60);
+    text-decoration: underline;
+}
+
+.phonespacing{
+    padding-right: 3px;
+    letter-spacing: 0.01px;
+}
